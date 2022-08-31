@@ -49,6 +49,7 @@ void FindElement(int[,] matr, int a1, int b1)
     else
         Console.WriteLine("Элемента с такой позицией в массиве нет");
 }
+
 int[,] matrix = CreateMatrixRndInt(4, 4, 0, 9);
 PrinMatrix(matrix);
 FindElement(matrix, a, b);

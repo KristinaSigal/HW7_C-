@@ -16,7 +16,7 @@ int[,] CreateMatrixRndInt(int row, int col, int min, int max)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            matrix[i, j] = rnd.Next(min,max);
+            matrix[i, j] = rnd.Next(min, max);
         }
     }
     return matrix;
@@ -36,16 +36,16 @@ void PrinMatrix(int[,] matrix)
     }
 }
 
-void Average (int[,] matr)
+void Average(int[,] matr)
 {
     for (int i = 0; i < matr.GetLength(0); i++)
     {
         double average = 0;
         for (int j = 0; j < matr.GetLength(1); j++)
         {
-           average += matr [i, j];
+            average += matr[i, j];
         }
-        average = average/matr.GetLength(1);
+        average = average / matr.GetLength(1);
         Console.Write($"{average.ToString(".00")}; ");
     }
 }
